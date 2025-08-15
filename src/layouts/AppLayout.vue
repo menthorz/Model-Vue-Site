@@ -4,6 +4,7 @@ import { RouterLink, RouterView, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 import { useSettingsStore } from '@/stores/settings'
 import ToastContainer from '@/components/ui/ToastContainer.vue'
+import PWAInstallPrompt from '@/components/PWAInstallPrompt.vue'
 
 const menuOpen = ref(false)
 function toggleMenu() {
@@ -100,6 +101,7 @@ const phoneLink = computed(() => {
             <RouterLink to="/clientes">Clientes</RouterLink>
             <RouterLink to="/pets">Pets</RouterLink>
             <RouterLink to="/servicos">Serviços</RouterLink>
+            <RouterLink to="/relatorios">Relatórios</RouterLink>
           </template>
           <template v-else>
             <RouterLink to="/loja">Loja</RouterLink>
@@ -237,6 +239,7 @@ const phoneLink = computed(() => {
       </div>
     </footer>
     <ToastContainer />
+    <PWAInstallPrompt />
   </div>
 </template>
 

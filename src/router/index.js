@@ -115,6 +115,12 @@ const router = createRouter({
       meta: { title: 'Configurações', admin: true },
     },
     {
+      path: '/relatorios',
+      name: 'reports',
+      component: () => import('../views/reports/DashboardView.vue'),
+      meta: { title: 'Relatórios', admin: true },
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('../views/NotFound.vue'),
