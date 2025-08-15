@@ -42,6 +42,24 @@ Aplicação Vue 3 + Vite moderna para gerenciamento completo de petshop com inte
 - **Informações da empresa**: Nome, CNPJ, contatos, endereço
 - **Horários e redes sociais**: Configuráveis pelo admin
 
+### ✅ Progressive Web App (PWA)
+
+- **App instalável**: Funciona como aplicativo nativo
+- **Funcionamento offline**: Cache inteligente de recursos
+- **Service Worker**: Atualizações automáticas
+- **Manifest**: Configuração completa com ícones
+- **Prompt de instalação**: Interface para adicionar à tela inicial
+
+### ✅ Dashboard e Relatórios
+
+- **Métricas principais**: KPIs em layout horizontal responsivo
+- **Análise de receita**: Tracking por período com valores em R$
+- **Serviços populares**: Ranking com gráficos de barras
+- **Clientes ativos**: Lista dos mais engajados
+- **Distribuição semanal**: Análise por dia da semana
+- **Crescimento mensal**: Tendências dos últimos 6 meses
+- **Design responsivo**: Adaptável para mobile e desktop
+
 ### ✅ Deploy e Acesso
 
 - **GitHub Actions**: Deploy automático configurado
@@ -51,11 +69,13 @@ Aplicação Vue 3 + Vite moderna para gerenciamento completo de petshop com inte
 ## 🛠️ Tecnologias
 
 - **Vue 3** + Composition API
-- **Vite** para build otimizado
+- **Vite** para build otimizado + PWA plugin
 - **Pinia** para gerenciamento de estado
 - **Vue Router** para navegação
 - **CSS Tokens** para sistema de tema
 - **LocalStorage API** para persistência
+- **Service Worker** para funcionalidade offline
+- **Web App Manifest** para instalação PWA
 
 ## 🏃‍♂️ Executar Localmente
 
@@ -71,10 +91,12 @@ Acesse: http://localhost:5173
 As seguintes funcionalidades ainda podem ser implementadas:
 
 - **Backend Integration**: Conectar com API REST Node.js/Express
-- **Relatórios**: Dashboard com métricas e gráficos de agendamentos
-- **Notificações**: Sistema de lembretes por email/SMS
-- **Calendário avançado**: Visualização mensal com drag-and-drop
-- **Multi-tenancy**: Suporte para múltiplas lojas
-- **PWA**: Transformar em Progressive Web App
-- **Backup/Restore**: Exportar/importar dados
-- **Integração com pagamentos**: Gateway de pagamento online
+- **Notificações Push**: Sistema de lembretes por email/SMS e push notifications
+- **Calendário avançado**: Visualização mensal com drag-and-drop de agendamentos
+- **Multi-tenancy**: Suporte para múltiplas lojas no mesmo sistema
+- **Backup/Restore**: Exportar/importar dados em JSON/CSV
+- **Integração com pagamentos**: Gateway de pagamento online (Stripe, PagSeguro)
+- **Geolocalização**: Mapa com localização da loja e clientes próximos
+- **Chat em tempo real**: Sistema de mensagens entre cliente e loja
+- **Integração com redes sociais**: Login social e compartilhamento
+- **API de terceiros**: Integração com sistemas de estoque/financeiro
